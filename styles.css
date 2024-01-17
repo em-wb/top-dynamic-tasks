@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222222;
+  font-size: 18px;
+}
+
+ul {
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+li,
+span {
+  width: fit-content;
+  padding: 0.5rem;
+  text-wrap: nowrap;
+}
+
+li:hover {
+  background-color: #d6d5d5;
+  opacity: 80%;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+span:hover,
+.selected {
+  border-bottom: #222222 solid 1px;
+  transition: all 250ms ease-in-out;
+}
+
+.options {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: fit-content;
+  min-width: 100%;
+}
+
+.drop-down {
+  display: inline-block;
+  padding: 0.6rem;
+  position: relative;
+}
+
+.drop-down-text:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
