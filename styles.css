@@ -11,6 +11,11 @@ body {
   font-size: 18px;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   font-size: 0.8rem;
   padding-top: 0.5rem;
