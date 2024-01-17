@@ -1,11 +1,11 @@
 const dropDowns = document.querySelectorAll(".drop-down");
 
-function toggleSelected(spanElement) {
-  spanElement.classList.toggle("selected");
+function toggleSelected(element) {
+  element.classList.toggle("selected");
 }
 
-function toggleHidden(ulElement) {
-  ulElement.classList.toggle("hidden");
+function toggleHidden(element) {
+  element.classList.toggle("hidden");
 }
 
 function handleMouseEnter(dropDown) {
@@ -34,3 +34,23 @@ dropDowns.forEach((dropDown) => {
   dropDown.addEventListener("mouseenter", () => handleMouseEnter(dropDown));
   dropDown.addEventListener("mouseleave", () => handleMouseLeave(dropDown));
 });
+
+const menuCtr = document.getElementById("menu-ctr");
+const dropDownCtr = document.getElementById("drop-down-ctr");
+menuCtr.addEventListener("click", () => {
+  dropDownCtr.classList.toggle("visible");
+});
+
+// function handleScreenSizeChange() {
+//   if (window.innerWidth < 720) {
+//     const menuCtr = document.getElementById("menu-ctr");
+//     const dropDownCtr = document.getElementById("drop-down-ctr");
+//     menuCtr.addEventListener("click", () => {
+//       dropDownCtr.classList.toggle("visible");
+//     });
+//     console.log("window");
+//   }
+// }
+
+// handleScreenSizeChange();
+// window.addEventListener("resize", handleScreenSizeChange);
