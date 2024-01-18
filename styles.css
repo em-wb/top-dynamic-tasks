@@ -92,6 +92,7 @@ button:hover {
 
 .hidden {
   display: none;
+  visibility: hidden;
 }
 
 .menu-ctr {
@@ -148,8 +149,11 @@ button:hover {
 .btn-ctr {
   display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
   gap: 2rem;
-  margin-bottom: 1rem;
+
+  bottom: 6rem;
+  z-index: 1000;
 }
 
 .dots {
@@ -192,6 +196,10 @@ button:hover {
 
   .drop-down > span:hover {
     border: none;
+  }
+
+  .image-slider-ctr {
+    margin-top: 6rem;
   }
 
   header {

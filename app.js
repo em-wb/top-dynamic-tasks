@@ -38,6 +38,7 @@ dropDowns.forEach((dropDown) => {
 
 const menuCtr = document.getElementById("menu-ctr");
 const dropDownCtr = document.getElementById("drop-down-ctr");
+const sliderCtr = document.getElementById("image-slider-ctr");
 menuCtr.addEventListener("click", () => {
   dropDownCtr.classList.toggle("visible");
 });
